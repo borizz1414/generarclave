@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generar clave</title>
+    <!--GOOGLE FONTS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" >
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+
+    <!--FONT AWESOME-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--CONTENEDOR-->
+    <div class="contenedor">
+        <!--LOGO-->
+        <div class="logo">
+            <h1 id="texto-logo">Generar Clave </h1>
+            <h2>By: Boris Lopez</h2>
+        </div>
+        <!--FORMULARIO-->
+       <form action="" class="app" id="app">
+            <div class="fila numero-caracteres">
+                <div class="col">
+                    <label for="numero-caracteres">Numero de caracteres:</label>
+                </div>
+                <div class="col botones">
+                    <div>
+                        <button class="btn false" id="btn-menos-uno"><i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <div>
+                        <input type="text" id="numero-caracteres" readonly value=12>
+                    </div>
+                    <div>
+                            <button class="btn" id="btn-mas-uno"><i class="fas fa-angle-up"></i></i></button>
+                        </div>
+                </div>
+            </div>
+            <div class="fila simbolos">
+                <div class="col">
+                    <label for="simbolos">¿Incluir simbolos?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-simbolos"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+            <div class="fila numeros">
+                    <div class="col">
+                        <label for="numeros">¿Incluir numeros?</label>
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-numeros"><i class="fas fa-check"></i></button>
+                    </div>
+                </div>
+             <div class="fila mayuscula">
+                    <div class="col">
+                        <label for="mayuscula">¿Incluir mayuscula?</label>
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-mayuscula"><i class="fas fa-check"></i></button>
+                    </div>
+             </div>
+             <div class="fila generar">
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar">Generar <i class="fas fa-lock"></i></button>
+                </div>
+                <div class="col">
+                    <input type="text" class="input-password" id="input-password" readonly value="14">
+                </div>
+             </div>
+
+             <div class="fila alerta">
+                 <div class="col">
+                     <div class="alerta-copiado active" id="alerta-copiado">
+                        <p><i class="fas fa-copy"></i> Texto copiado</p>
+                     </div>
+                 </div>
+             </div>
+       </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
