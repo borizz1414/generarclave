@@ -25,6 +25,14 @@ body{
 .logo{
     margin-bottom:30px;
     text-align: center;
+    
+}
+.logo h2{
+    font-size: 16px;
+}
+.logo i{
+    font-size: 16px;
+    color:#f95959;
 }
 /*CONTENEDOR*/
 .contenedor{
@@ -52,6 +60,9 @@ body{
     text-align: center;
     border:none;
 }
+.app .btn.false{
+    background: #30e3ca;
+}
 .app .btn{
     width: 100%;
     background: #0d7377;
@@ -70,6 +81,8 @@ body{
 
     background:#30e3ca;
 }
+
+
 /* FILA NUMERO DE CARACTERES */
 .app .numero-caracteres .botones div{
     width: 100%;
@@ -114,6 +127,7 @@ body{
     top:-1px;
     font-size: 14px;
 }
+
 .app .fila.generar .btn.btn-generar:after{
     content:"";
     display: inline-block;
@@ -131,7 +145,7 @@ body{
 }
 .col input{
     width: 100%;
-    border-radius: 4px;
+    
     background: none;
     border:1px solid rgba(255,255,255,.25);
     color:#fff;
@@ -161,8 +175,40 @@ body{
     transition: all .3a ease;
 }
 .app .fila.alerta .alerta-copiado.active{
-    color: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.50);
 }
 .app .fila.alerta .alerta-copiado p,
 .app .fila.alerta .alerta-copiado i{
     font-size:12px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 500px){
+    #texto-logo{
+        font-size:60px;
+    }
+    .app .fila{
+        flex-direction: column;
+        margin-bottom:20px;
+    }
+    .app .fila.generar .col:nth-child(1){
+        margin-bottom:20px;
+    }
+    .app .fila .col{
+        width: 100%;
+    }
+    .app .fila.generar {
+        border:1px solid rgba(255,255,255,.25);
+        padding:40px;
+    }
+    .app .fila.generar .col:nth-child(1),
+    .app .fila.generar .col:nth-child(2){
+        width: 100%;
+    }
+    .app .fila.generar .btn.btn-generar:after{
+        top:auto;
+        left:50%;
+        bottom:-7px;
+        right: 50%;
+    }
+}
